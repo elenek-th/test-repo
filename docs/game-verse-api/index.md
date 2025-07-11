@@ -1,0 +1,1 @@
+REST API for the Game-Verse platform, which includes different types of games. Here studios can publish games and users can take part in different matches while also getting achievements and appearing on the leaderboard

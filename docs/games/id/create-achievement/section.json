@@ -1,0 +1,311 @@
+{
+  "endpoints": {
+    "method": "post",
+    "path": "/games/{id}/achievements"
+  },
+  "request": {
+    "query": [],
+    "body": [
+      {
+        "name": "name",
+        "description": "",
+        "isRequired": true,
+        "value": "",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "description",
+        "description": "",
+        "isRequired": true,
+        "value": "",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "type",
+        "description": "",
+        "isRequired": true,
+        "value": "bronze",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "enumValue": [
+            {
+              "value": "bronze"
+            },
+            {
+              "value": "silver"
+            },
+            {
+              "value": "gold"
+            },
+            {
+              "value": "platinum"
+            }
+          ],
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "points",
+        "description": "",
+        "isRequired": true,
+        "value": "",
+        "valueType": "integer",
+        "items": [],
+        "options": {
+          "minimum": 1,
+          "maximum": 1000,
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "criteria",
+        "description": "",
+        "isRequired": false,
+        "value": "",
+        "valueType": "object",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "header": [
+      {
+        "name": "Authorization",
+        "description": "",
+        "isRequired": false,
+        "value": "JWT",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "path": [
+      {
+        "name": "id",
+        "description": "",
+        "isRequired": true,
+        "value": "",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "format": "uuid",
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "contentType": "application/json",
+    "graphqlQuery": "",
+    "codeExamples": [],
+    "_id": "6870db25daae5f0fa050482c"
+  },
+  "responses": [
+    {
+      "name": "201",
+      "status": "Created",
+      "body": [
+        {
+          "name": "id",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "uuid",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "name",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "description",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "game-id",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "uuid",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "game-title",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "achievement-type",
+          "description": "",
+          "isRequired": false,
+          "value": "bronze",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "enumValue": [
+              {
+                "value": "bronze"
+              },
+              {
+                "value": "silver"
+              },
+              {
+                "value": "gold"
+              },
+              {
+                "value": "platinum"
+              }
+            ],
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "points",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "integer",
+          "items": [],
+          "options": {
+            "minimum": 1,
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "criteria",
+          "description": "JSON object defining achievement criteria",
+          "isRequired": false,
+          "value": "",
+          "valueType": "object",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "created-at",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "date-time",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "updated-at",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "date-time",
+            "xml": {
+              "prefix": null
+            }
+          }
+        }
+      ],
+      "statusCode": 201,
+      "description": "Achievement created",
+      "contentType": "application/json"
+    },
+    {
+      "name": "Authentication token missing or invalid",
+      "status": "Unauthorized",
+      "body": [],
+      "statusCode": 401,
+      "description": "Authentication token missing or invalid",
+      "contentType": "application/json"
+    },
+    {
+      "name": "Access denied - insufficient permissions",
+      "status": "Forbidden",
+      "body": [],
+      "statusCode": 403,
+      "description": "Access denied - insufficient permissions",
+      "contentType": "application/json"
+    }
+  ],
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": []
+}

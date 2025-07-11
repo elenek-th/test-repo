@@ -1,0 +1,1 @@
+Studios can only delete their own games

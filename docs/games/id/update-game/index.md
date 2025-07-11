@@ -1,0 +1,1 @@
+Studios can only update their own games
