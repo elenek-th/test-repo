@@ -1,0 +1,79 @@
+{
+  "endpoints": {
+    "method": "delete",
+    "path": "/games/{id}/achievements"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [
+      {
+        "name": "Authorization",
+        "description": "",
+        "isRequired": false,
+        "value": "JWT",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "path": [
+      {
+        "name": "id",
+        "description": "",
+        "isRequired": true,
+        "value": "",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "format": "uuid",
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": [],
+    "_id": "6870db25daae5f0fa0504837"
+  },
+  "responses": [
+    {
+      "name": "Achievement deleted",
+      "status": "No Content",
+      "body": [],
+      "statusCode": 204,
+      "description": "Achievement deleted",
+      "contentType": "application/json"
+    },
+    {
+      "name": "Authentication token missing or invalid",
+      "status": "Unauthorized",
+      "body": [],
+      "statusCode": 401,
+      "description": "Authentication token missing or invalid",
+      "contentType": "application/json"
+    },
+    {
+      "name": "Access denied - insufficient permissions",
+      "status": "Forbidden",
+      "body": [],
+      "statusCode": 403,
+      "description": "Access denied - insufficient permissions",
+      "contentType": "application/json"
+    }
+  ],
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": []
+}

@@ -1,0 +1,1 @@
+Studios only, for their own games

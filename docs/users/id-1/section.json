@@ -1,0 +1,32 @@
+{
+  "endpoints": {},
+  "request": null,
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": [
+    {
+      "path": "/"
+    },
+    {
+      "method": "GET",
+      "path": "/users/{id}"
+    },
+    {
+      "method": "PUT",
+      "path": "/users/{id}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/users/{id}"
+    },
+    {
+      "method": "GET",
+      "path": "/users/{id}/achievements?game-id=&page=1&limit=10"
+    }
+  ]
+}

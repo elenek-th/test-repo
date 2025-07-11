@@ -1,0 +1,181 @@
+{
+  "id": "6870dae7b925b031a11da313",
+  "name": "cli-test",
+  "lastExport": "2025-07-11T09:59:21.128Z",
+  "baseUrl": "https://gameverse.com/v1",
+  "sections": [
+    {
+      "name": "Game-Verse API",
+      "slug": "game-verse-api",
+      "children": [],
+      "externalPageLink": "",
+      "isNewTab": false
+    },
+    {
+      "name": "Games",
+      "slug": "games",
+      "children": [
+        {
+          "name": "List games",
+          "slug": "games/list-games",
+          "children": []
+        },
+        {
+          "name": "Create game",
+          "slug": "games/create-game",
+          "children": []
+        },
+        {
+          "name": "{id}",
+          "slug": "games/id",
+          "children": [
+            {
+              "name": "Get game",
+              "slug": "games/id/get-game",
+              "children": []
+            },
+            {
+              "name": "Update game",
+              "slug": "games/id/update-game",
+              "children": []
+            },
+            {
+              "name": "Delete game",
+              "slug": "games/id/delete-game",
+              "children": []
+            },
+            {
+              "name": "List game achievements",
+              "slug": "games/id/list-game-achievements",
+              "children": []
+            },
+            {
+              "name": "Create achievement",
+              "slug": "games/id/create-achievement",
+              "children": []
+            },
+            {
+              "name": "Delete achievement",
+              "slug": "games/id/delete-achievement",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "externalPageLink": "",
+      "isNewTab": false
+    },
+    {
+      "name": "Get leaderboard",
+      "slug": "get-leaderboard",
+      "children": [],
+      "externalPageLink": "",
+      "isNewTab": false
+    },
+    {
+      "name": "Matches",
+      "slug": "matches",
+      "children": [
+        {
+          "name": "List matches",
+          "slug": "matches/list-matches",
+          "children": []
+        },
+        {
+          "name": "Record match",
+          "slug": "matches/record-match",
+          "children": []
+        },
+        {
+          "name": "Get match",
+          "slug": "matches/get-match",
+          "children": []
+        },
+        {
+          "name": "Delete match",
+          "slug": "matches/delete-match",
+          "children": []
+        }
+      ],
+      "externalPageLink": "",
+      "isNewTab": false
+    },
+    {
+      "name": "Studios",
+      "slug": "studios",
+      "children": [
+        {
+          "name": "List studios",
+          "slug": "studios/list-studios",
+          "children": []
+        },
+        {
+          "name": "Create studio",
+          "slug": "studios/create-studio",
+          "children": []
+        },
+        {
+          "name": "Get studio",
+          "slug": "studios/get-studio",
+          "children": []
+        },
+        {
+          "name": "Update studio",
+          "slug": "studios/update-studio",
+          "children": []
+        },
+        {
+          "name": "Delete studio",
+          "slug": "studios/delete-studio",
+          "children": []
+        }
+      ],
+      "externalPageLink": "",
+      "isNewTab": false
+    },
+    {
+      "name": "Users",
+      "slug": "users",
+      "children": [
+        {
+          "name": "List users",
+          "slug": "users/list-users",
+          "children": []
+        },
+        {
+          "name": "Add user",
+          "slug": "users/add-user",
+          "children": []
+        },
+        {
+          "name": "{id}",
+          "slug": "users/id-1",
+          "children": [
+            {
+              "name": "Get user",
+              "slug": "users/id-1/get-user",
+              "children": []
+            },
+            {
+              "name": "Update user",
+              "slug": "users/id-1/update-user",
+              "children": []
+            },
+            {
+              "name": "Delete user",
+              "slug": "users/id-1/delete-user",
+              "children": []
+            },
+            {
+              "name": "Get user achievements",
+              "slug": "users/id-1/get-user-achievements",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "externalPageLink": "",
+      "isNewTab": false
+    }
+  ]
+}

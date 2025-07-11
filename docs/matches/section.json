@@ -1,0 +1,32 @@
+{
+  "endpoints": {},
+  "request": null,
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": [
+    {
+      "path": "/"
+    },
+    {
+      "method": "GET",
+      "path": "/matches?game-id=&user-id=&status=completed&page=1&limit=10"
+    },
+    {
+      "method": "POST",
+      "path": "/matches"
+    },
+    {
+      "method": "GET",
+      "path": "/matches/{id}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/matches/{id}"
+    }
+  ]
+}

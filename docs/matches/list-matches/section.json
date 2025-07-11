@@ -1,0 +1,374 @@
+{
+  "endpoints": {
+    "method": "get",
+    "path": "/matches"
+  },
+  "request": {
+    "query": [
+      {
+        "name": "game-id",
+        "description": "",
+        "isRequired": false,
+        "value": "",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "format": "uuid",
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "user-id",
+        "description": "",
+        "isRequired": false,
+        "value": "",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "format": "uuid",
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "status",
+        "description": "",
+        "isRequired": false,
+        "value": "completed",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "enumValue": [
+            {
+              "value": "completed"
+            },
+            {
+              "value": "abandoned"
+            },
+            {
+              "value": "disputed"
+            }
+          ],
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "page",
+        "description": "Page number (pagination)",
+        "isRequired": false,
+        "value": "1",
+        "valueType": "integer",
+        "items": [],
+        "options": {
+          "defaultValue": "1",
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "limit",
+        "description": "Page size",
+        "isRequired": false,
+        "value": "10",
+        "valueType": "integer",
+        "items": [],
+        "options": {
+          "defaultValue": "10",
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "body": [],
+    "header": [
+      {
+        "name": "Authorization",
+        "description": "",
+        "isRequired": false,
+        "value": "JWT",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "path": [],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": [],
+    "_id": "6870db25daae5f0fa0504872"
+  },
+  "responses": [
+    {
+      "name": "200",
+      "status": "OK",
+      "body": [
+        {
+          "name": "data",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "array",
+          "items": [
+            {
+              "name": "0",
+              "description": "",
+              "isRequired": false,
+              "value": "",
+              "valueType": "array",
+              "items": [
+                {
+                  "name": "id",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "uuid",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "game-id",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "uuid",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "game-title",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "player-ids",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "array",
+                  "items": [
+                    {
+                      "name": "0",
+                      "description": "",
+                      "isRequired": false,
+                      "value": "",
+                      "valueType": "array",
+                      "items": [],
+                      "options": {
+                        "xml": {
+                          "prefix": null
+                        }
+                      }
+                    }
+                  ],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "players",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "array",
+                  "items": [
+                    {
+                      "name": "0",
+                      "description": "",
+                      "isRequired": false,
+                      "value": "",
+                      "valueType": "array",
+                      "items": [
+                        {
+                          "name": "id",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "string",
+                          "items": [],
+                          "options": {
+                            "format": "uuid",
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "username",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "string",
+                          "items": [],
+                          "options": {
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "score",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "integer",
+                          "items": [],
+                          "options": {
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        }
+                      ],
+                      "options": {
+                        "xml": {
+                          "prefix": null
+                        }
+                      }
+                    }
+                  ],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "result",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "object",
+                  "items": [],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "season",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "duration",
+                  "description": "Match duration in seconds",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "integer",
+                  "items": [],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "played-at",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "date-time",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "started-at",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "date-time",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                }
+              ],
+              "options": {
+                "xml": {
+                  "prefix": null
+                }
+              }
+            }
+          ],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "pagination",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "object",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        }
+      ],
+      "statusCode": 200,
+      "description": "List of matches",
+      "contentType": "application/json"
+    }
+  ],
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": []
+}

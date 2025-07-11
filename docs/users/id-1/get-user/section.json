@@ -1,0 +1,344 @@
+{
+  "endpoints": {
+    "method": "get",
+    "path": "/users/{id}"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [
+      {
+        "name": "Authorization",
+        "description": "",
+        "isRequired": false,
+        "value": "JWT",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "path": [
+      {
+        "name": "id",
+        "description": "",
+        "isRequired": true,
+        "value": "",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "format": "uuid",
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": [],
+    "_id": "6870db25daae5f0fa0504990"
+  },
+  "responses": [
+    {
+      "name": "200",
+      "status": "OK",
+      "body": [
+        {
+          "name": "id",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "uuid",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "username",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "email",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "email",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "total-score",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "integer",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "achievement-count",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "integer",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "user-achievements",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "array",
+          "items": [
+            {
+              "name": "0",
+              "description": "",
+              "isRequired": false,
+              "value": "",
+              "valueType": "array",
+              "items": [
+                {
+                  "name": "id",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "uuid",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "name",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "description",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "game-id",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "uuid",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "game-title",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "achievement-type",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "bronze",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "enumValue": [
+                      {
+                        "value": "bronze"
+                      },
+                      {
+                        "value": "silver"
+                      },
+                      {
+                        "value": "gold"
+                      },
+                      {
+                        "value": "platinum"
+                      }
+                    ],
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "points",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "integer",
+                  "items": [],
+                  "options": {
+                    "minimum": 1,
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "criteria",
+                  "description": "JSON object defining achievement criteria",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "object",
+                  "items": [],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "created-at",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "date-time",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "updated-at",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "date-time",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                }
+              ],
+              "options": {
+                "xml": {
+                  "prefix": null
+                }
+              }
+            }
+          ],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "created-at",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "date-time",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "updated-at",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "date-time",
+            "xml": {
+              "prefix": null
+            }
+          }
+        }
+      ],
+      "statusCode": 200,
+      "description": "User profile",
+      "contentType": "application/json"
+    },
+    {
+      "name": "Resource not found",
+      "status": "Not Found",
+      "body": [],
+      "statusCode": 404,
+      "description": "Resource not found",
+      "contentType": "application/json"
+    }
+  ],
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": []
+}

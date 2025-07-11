@@ -1,0 +1,526 @@
+{
+  "endpoints": {
+    "method": "post",
+    "path": "/studios"
+  },
+  "request": {
+    "query": [],
+    "body": [
+      {
+        "name": "name",
+        "description": "",
+        "isRequired": true,
+        "value": "",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "email",
+        "description": "",
+        "isRequired": true,
+        "value": "",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "format": "email",
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "description",
+        "description": "",
+        "isRequired": false,
+        "value": "",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "header": [
+      {
+        "name": "Authorization",
+        "description": "",
+        "isRequired": false,
+        "value": "JWT",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "path": [],
+    "contentType": "application/json",
+    "graphqlQuery": "",
+    "codeExamples": [],
+    "_id": "6870db25daae5f0fa05048f3"
+  },
+  "responses": [
+    {
+      "name": "201",
+      "status": "Created",
+      "body": [
+        {
+          "name": "id",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "uuid",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "name",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "email",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "email",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "description",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "games-count",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "integer",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "games-list",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "array",
+          "items": [
+            {
+              "name": "0",
+              "description": "",
+              "isRequired": false,
+              "value": "",
+              "valueType": "array",
+              "items": [
+                {
+                  "name": "id",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "uuid",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "title",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "genre",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "puzzle",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "enumValue": [
+                      {
+                        "value": "puzzle"
+                      },
+                      {
+                        "value": "fps"
+                      },
+                      {
+                        "value": "racing"
+                      }
+                    ],
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "studio-id",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "uuid",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "studio-name",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "game-achievements",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "array",
+                  "items": [
+                    {
+                      "name": "0",
+                      "description": "",
+                      "isRequired": false,
+                      "value": "",
+                      "valueType": "array",
+                      "items": [
+                        {
+                          "name": "id",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "string",
+                          "items": [],
+                          "options": {
+                            "format": "uuid",
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "name",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "string",
+                          "items": [],
+                          "options": {
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "description",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "string",
+                          "items": [],
+                          "options": {
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "game-id",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "string",
+                          "items": [],
+                          "options": {
+                            "format": "uuid",
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "game-title",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "string",
+                          "items": [],
+                          "options": {
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "achievement-type",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "bronze",
+                          "valueType": "string",
+                          "items": [],
+                          "options": {
+                            "enumValue": [
+                              {
+                                "value": "bronze"
+                              },
+                              {
+                                "value": "silver"
+                              },
+                              {
+                                "value": "gold"
+                              },
+                              {
+                                "value": "platinum"
+                              }
+                            ],
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "points",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "integer",
+                          "items": [],
+                          "options": {
+                            "minimum": 1,
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "criteria",
+                          "description": "JSON object defining achievement criteria",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "object",
+                          "items": [],
+                          "options": {
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "created-at",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "string",
+                          "items": [],
+                          "options": {
+                            "format": "date-time",
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        },
+                        {
+                          "name": "updated-at",
+                          "description": "",
+                          "isRequired": false,
+                          "value": "",
+                          "valueType": "string",
+                          "items": [],
+                          "options": {
+                            "format": "date-time",
+                            "xml": {
+                              "prefix": null
+                            }
+                          }
+                        }
+                      ],
+                      "options": {
+                        "xml": {
+                          "prefix": null
+                        }
+                      }
+                    }
+                  ],
+                  "options": {
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "release-date",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "date",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "created-at",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "date-time",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                },
+                {
+                  "name": "updated-at",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "string",
+                  "items": [],
+                  "options": {
+                    "format": "date-time",
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                }
+              ],
+              "options": {
+                "xml": {
+                  "prefix": null
+                }
+              }
+            }
+          ],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "created-at",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "date-time",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "updated-at",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "format": "date-time",
+            "xml": {
+              "prefix": null
+            }
+          }
+        }
+      ],
+      "statusCode": 201,
+      "description": "Studio created",
+      "contentType": "application/json"
+    },
+    {
+      "name": "Authentication token missing or invalid",
+      "status": "Unauthorized",
+      "body": [],
+      "statusCode": 401,
+      "description": "Authentication token missing or invalid",
+      "contentType": "application/json"
+    },
+    {
+      "name": "Access denied - insufficient permissions",
+      "status": "Forbidden",
+      "body": [],
+      "statusCode": 403,
+      "description": "Access denied - insufficient permissions",
+      "contentType": "application/json"
+    }
+  ],
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": []
+}

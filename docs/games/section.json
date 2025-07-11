@@ -1,0 +1,51 @@
+{
+  "endpoints": {},
+  "request": null,
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": [
+    {
+      "path": "/"
+    },
+    {
+      "method": "GET",
+      "path": "/games?genre=puzzle&page=1&limit=10&sort="
+    },
+    {
+      "method": "POST",
+      "path": "/games"
+    },
+    {
+      "path": "/"
+    },
+    {
+      "method": "GET",
+      "path": "/games/{id}"
+    },
+    {
+      "method": "PUT",
+      "path": "/games/{id}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/games/{id}"
+    },
+    {
+      "method": "GET",
+      "path": "/games/{id}/achievements?type=bronze&page=1&limit=10"
+    },
+    {
+      "method": "POST",
+      "path": "/games/{id}/achievements"
+    },
+    {
+      "method": "DELETE",
+      "path": "/games/{id}/achievements"
+    }
+  ]
+}

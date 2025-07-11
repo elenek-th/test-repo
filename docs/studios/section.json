@@ -1,0 +1,36 @@
+{
+  "endpoints": {},
+  "request": null,
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": [
+    {
+      "path": "/"
+    },
+    {
+      "method": "GET",
+      "path": "/studios?name=&page=1&limit=10"
+    },
+    {
+      "method": "POST",
+      "path": "/studios"
+    },
+    {
+      "method": "GET",
+      "path": "/studios/{id}"
+    },
+    {
+      "method": "PUT",
+      "path": "/studios/{id}"
+    },
+    {
+      "method": "DELETE",
+      "path": "/studios/{id}"
+    }
+  ]
+}
